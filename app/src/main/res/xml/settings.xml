@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/text_preference">
+        <Preference
+            android:key="@string/id_language"
+            android:title="@string/text_language" />
+        <Preference
+            android:key="search"
+            android:title="@string/text_search"/>
+        <Preference
+            android:key="@string/id_swipe_back"
+            android:title="@string/text_swipe_to_return"/>
+        <CheckBoxPreference
+            android:key="shake_to_return_new"
+            android:title="@string/text_shake_to_return"
+            android:checked="true"/>
+        <CheckBoxPreference
+            android:key="exit_confirm"
+            android:title="@string/text_exit_confirm"
+            android:summary="@string/text_exit_confirm_summary"
+            android:checked="true"/>
+        <CheckBoxPreference
+            android:key="night_mode"
+            android:title="@string/text_night_mode"
+            android:checked="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/text_network">
+        <CheckBoxPreference
+            android:key="no_pic_mode"
+            android:title="@string/text_no_pic_mode"
+            android:checked="false"
+            android:summary="@string/text_no_pic_mode_summary"/>
+        <CheckBoxPreference
+            android:key="auto_refresh"
+            android:title="@string/text_auto_refresh"
+            android:summary="@string/text_auto_refresh_summary"
+            />
+        <Preference
+            android:key="clear_cache"
+            android:title="@string/text_clear_cache"
+            android:summary="@string/text_clear_cache_summary"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

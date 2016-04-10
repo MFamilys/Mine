@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mfamilys.mine">
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问网络状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 访问WiFi状态权限 -->
+    <uses-permission android:name="android.permisson.ACCESS_WIFI_STATE" />
+    <!-- 写设置权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 支持的尺寸 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".MineApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/mine_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/DayTheme">
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.daily.DailyDetailsActivity" />
+        <activity android:name=".ui.settings.SettingsActivity"/>
+    </application>
+
+</manifest>
